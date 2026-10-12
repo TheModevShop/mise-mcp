@@ -1,0 +1,11 @@
+{
+  "name": "mise",
+  "displayName": "Mise",
+  "version": "1.0.0",
+  "description": "Read your Mise leads, proposals, rooms and room availability from Claude. Read-only; sign in with your Mise account.",
+  "author": { "name": "The Modev Shop", "email": "mise@modevshop.com", "url": "https://mise.modevshop.com" },
+  "homepage": "https://github.com/TheModevShop/mise-mcp",
+  "repository": "https://github.com/TheModevShop/mise-mcp",
+  "license": "MIT",
+  "keywords": ["mise", "events", "hospitality", "venues", "leads", "mcp"]
+}

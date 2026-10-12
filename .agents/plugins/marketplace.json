@@ -1,0 +1,12 @@
+{
+  "name": "mise",
+  "interface": { "displayName": "Mise" },
+  "plugins": [
+    {
+      "name": "mise",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

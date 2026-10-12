@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mise": {
+      "type": "streamable-http",
+      "url": "https://mise.modevshop.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": { "type": "oauth", "client": { "mode": "dcr" } }
+        }
+      }
+    }
+  }
+}

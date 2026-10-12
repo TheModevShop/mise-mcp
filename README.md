@@ -14,6 +14,9 @@ are no keys to copy.
 
 ### Claude (web, desktop and mobile)
 
+On your phone? Follow the three-step guide at
+[mise.modevshop.com/ai](https://mise.modevshop.com/ai).
+
 [**Add Mise to Claude**](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Mise&connectorUrl=https%3A%2F%2Fmise.modevshop.com%2Fmcp),
 then click **Connect**, sign in to Mise and click **Allow**.
 

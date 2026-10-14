@@ -1,14 +1,15 @@
 # Mise for Claude, ChatGPT and Codex
 
 [Mise](https://mise.modevshop.com) is the event system for restaurants and venues.
-This connector lets your AI assistant read your Mise account: which leads still
-need a reply, your active proposals, your rooms, and whether a room is free.
+This connector lets your AI assistant work with your Mise account: what's on
+the calendar, adding events, which leads still need a reply, your active
+proposals, your rooms, and whether a room is free.
 
 **Server address:** `https://mise.modevshop.com/mcp`
 
-Access is **read-only**. The assistant can't change records or send messages.
 An owner or manager signs in with their Mise account and picks the venue. There
-are no keys to copy.
+are no keys to copy. The assistant can add events (it asks first), but it can't
+delete anything or send messages.
 
 ## Install
 
@@ -54,10 +55,12 @@ Without the plugin: `codex mcp add mise --url https://mise.modevshop.com/mcp`.
 Any MCP client that supports remote servers (Streamable HTTP) with OAuth can
 connect to `https://mise.modevshop.com/mcp`. Clients that only take a fixed
 token can use a key from Mise → **Settings → AI assistants**, sent as
-`Authorization: Bearer <key>`. Keep keys out of chats, files and URLs.
+`Authorization: Bearer <key>`. Those keys are read-only. Keep keys out of chats, files and URLs.
 
 ## Try it
 
+- "What's on this week?"
+- "Add a jazz night next Friday at 7."
 - "Which Mise leads still need a reply?"
 - "List my active proposals in Mise."
 - "Is our private dining room free next Saturday evening?"
@@ -70,6 +73,9 @@ token can use a key from Mise → **Settings → AI assistants**, sent as
 | `list_active_proposals` | Recent proposals that aren't withdrawn or expired, with status and views |
 | `list_rooms` | Your active rooms and their IDs |
 | `get_room_availability` | Events that overlap a room and a time window |
+| `list_events` | Events between two dates: type, time, room, performer, guests, budget |
+| `get_event_options` | Event types, rooms, performers with their last booking, and recent events, so the assistant can suggest the usual room, time and guests |
+| `create_event` | Adds one event. It asks what kind of event, then only what's missing, and won't double-book a room unless you say so |
 
 Lists are bounded (up to 50 items), not complete reports. An availability answer
 marked incomplete doesn't prove a room is free.

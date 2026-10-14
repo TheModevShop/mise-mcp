@@ -1,25 +1,32 @@
 {
   "name": "mise",
   "version": "1.0.0",
-  "description": "Read your Mise leads, proposals, rooms and room availability. Read-only; sign in with your Mise account.",
-  "author": { "name": "The Modev Shop", "email": "mise@modevshop.com", "url": "https://mise.modevshop.com" },
+  "description": "See and add Mise events, and check leads, proposals and rooms. Sign in with your Mise account.",
+  "author": {
+    "name": "The Modev Shop",
+    "email": "mise@modevshop.com",
+    "url": "https://mise.modevshop.com"
+  },
   "repository": "https://github.com/TheModevShop/mise-mcp",
   "license": "MIT",
   "interface": {
     "displayName": "Mise",
     "shortDescription": "Venue events, leads and rooms",
-    "longDescription": "Mise is the event system for restaurants and venues. Connect it to see which leads still need a reply, which proposals are active, your rooms, and whether a room is free at a given time. Access is read-only: the assistant can't change records or send messages. An owner or manager signs in with their Mise account and can disconnect the assistant anytime in Mise under Settings, AI assistants.",
+    "longDescription": "Mise is the event system for restaurants and venues. Connect it to see what's on the calendar and add events, check which leads still need a reply and which proposals are active, and see whether a room is free. When you add an event, the assistant asks what kind of event it is and only what's missing, suggests answers from past bookings, and checks with you before saving. It can't delete anything or send messages. An owner or manager signs in with their Mise account and can disconnect the assistant anytime in Mise under Settings, AI assistants.",
     "developerName": "The Modev Shop",
     "category": "Productivity",
-    "capabilities": ["Read"],
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
     "websiteURL": "https://mise.modevshop.com",
     "supportURL": "https://github.com/TheModevShop/mise-mcp/issues",
     "privacyPolicyURL": "https://mise.modevshop.com/privacy",
     "termsOfServiceURL": "https://mise.modevshop.com/terms",
     "defaultPrompt": [
-      "Which Mise leads still need a reply?",
-      "Is our private dining room free next Saturday evening?",
-      "List my active proposals in Mise"
+      "What's on this week in Mise?",
+      "Add a jazz night next Friday at 7",
+      "Which Mise leads still need a reply?"
     ],
     "brandColor": "#000000",
     "composerIcon": "./assets/icon.png",
